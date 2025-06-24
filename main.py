@@ -21,7 +21,6 @@ gen_ai.configure(api_key=GOOGLE_API_KEY)
 model = gen_ai.GenerativeModel("gemini-2.5-flash")
 
 # Function to translate roles between Gemini-Pro and Streamlit terminology
-
 def translate_role_for_streamlit(user_role):
     if user_role == "model":
         return "assistant"
